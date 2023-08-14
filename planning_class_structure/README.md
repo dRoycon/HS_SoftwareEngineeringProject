@@ -18,9 +18,14 @@ classDiagram
 
     Controler *-- Joystick
 
-    GameScreen *-- GameScene
+    GameplayScreen *-- GameScene
     GameScreen *-- Controler
 
     StartingScreen *-- Scene
+
+    LevelSelctingScreen *-- Scene
+    SettingsScreen *-- Scene
+    PauseGameplayScreen *-- screen
+
 
 ```
