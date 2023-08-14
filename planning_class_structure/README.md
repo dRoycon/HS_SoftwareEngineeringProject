@@ -2,30 +2,32 @@
 
 ``` mermaid
 classDiagram
-    GraphicalObject <|-- GameObject : Inheritance
-    GraphicalObject <|-- TextBox : Inheritance
-    GraphicalObject <|-- Joystick : Inheritance
+    GraphicalObject <|-- GameObject 
+    GraphicalObject <|-- TextBox
+    GraphicalObject <|-- Joystick
 
-    GameObject <|-- Portal : Inheritance
-    GameObject <|-- Box : Inheritance
-    GameObject <|-- Entity : Inheritance
+    GameObject <|-- Portal
+    GameObject <|-- Box
+    GameObject <|-- Entity
 
-    Entity <|-- Enemy : Inheritance
-    Entity <|-- Player : Inheritance
+    Entity <|-- NPC
+    Entity <|-- Player
 
-    Scene *-- GraphicalObject : Composition
-    Scene <|-- GameScene : Inheritance
+    Scene *-- GraphicalObject
+    Scene <|-- GameScene
 
-    Controler *-- Joystick : Composition
+    Player *-- GameScene
 
-    GameplayScreen *-- GameScene : Composition
-    GameScreen *-- Controler : Composition
+    Controler *-- Joystick
 
-    StartingScreen *-- Scene : Composition
+    GameplayScreen *-- GameScene
+    GameplayScreen *-- Controler
 
-    LevelSelctingScreen *-- Scene : Composition
-    SettingsScreen *-- Scene : Composition
-    PauseGameplayScreen *-- screen : Composition
+    StartingScreen *-- Scene
+
+    LevelSelctingScreen *-- Scene
+    SettingsScreen *-- Scene
+    PauseGameplayScreen *-- Seane
 
 
 ```
