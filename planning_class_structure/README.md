@@ -17,7 +17,7 @@ classDiagram
     Scene <|-- GameScene
 
     GameScene *-- Player
-
+    GameScene *-- GameObject
 
     Controler *-- Joystick
 
