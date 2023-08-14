@@ -16,7 +16,8 @@ classDiagram
     Scene *-- GraphicalObject
     Scene <|-- GameScene
 
-    Player *-- GameScene
+    GameScene *-- Player
+
 
     Controler *-- Joystick
 
@@ -27,7 +28,7 @@ classDiagram
 
     LevelSelctingScreen *-- Scene
     SettingsScreen *-- Scene
-    PauseGameplayScreen *-- Seane
+    PauseGameplayScreen *-- Scene
 
 
 ```
