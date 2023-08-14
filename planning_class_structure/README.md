@@ -2,9 +2,9 @@
 
 ``` mermaid
 classDiagram
+    GraphicalObject <|-- GameObject
     GraphicalObject <|-- TextBox
     GraphicalObject <|-- Joystick
-    GraphicalObject <|-- GameObject
 
     GameObject <|-- Portal
     GameObject <|-- Box
