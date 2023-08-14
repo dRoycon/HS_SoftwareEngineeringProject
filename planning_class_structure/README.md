@@ -3,7 +3,7 @@
 ``` mermaid
 classDiagram
     GraphicalObject <|-- TextBox
-    GraphicalObject <|-- JoyStick
+    GraphicalObject <|-- Joystick
     GraphicalObject <|-- GameObject
 
     GameObject <|-- Portal
@@ -13,7 +13,14 @@ classDiagram
     Entity <|-- Enemy
     Entity <|-- Player
 
+    Scene *-- GraphicalObject
     Scene <|-- GameScene
 
-    GameScreen
+    Controler *-- Joystick
+
+    GameScreen *-- GameScene
+    GameScreen *-- Controler
+
+    StartingScreen *-- Scene
+
 ```
