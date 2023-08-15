@@ -1,6 +1,7 @@
-# Screens 
+# Screens
 
 ## Screens Layout
+
 ``` mermaid
 flowchart LR
 
@@ -14,20 +15,17 @@ flowchart LR
     PauseScreen <--> SettingScreen
     PauseScreen --> StartingScreen
 ```
+
 *Note: The SettingScreen can only return to its previous you can **not** do ```StartingScreen --> SettingScreen --> PauseScreen --> GameplayScreen```
 
-# Sketches
+## Sketches
 
-## Starting Screen
+### Starting Screen
 
+### Settings
 
-## Settings
+### Leves Selecting Screen
 
+### Gameplay Screen
 
-## Leves Selecting Screen
-
-
-## Gameplay Screen
-
-
-## Pause Screen
+### Pause Screen

@@ -1,4 +1,4 @@
-# The Classes Diagrams Structure 
+# The Classes Diagrams Structure
 
 ``` mermaid
 classDiagram
@@ -48,7 +48,7 @@ classDiagram
     }
 
     class GameObject{
-        +Update(Position)
+        +Update(PointF position)
     }
 
     class Scene{
