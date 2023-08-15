@@ -73,4 +73,5 @@ classDiagram
 ```
 
 #### [Player](planning_class_structure/classes_description/Player.md)<br />
-#### [Portal](planning_class_structure/classes_description/Portal.md)
+#### [Portal](planning_class_structure/classes_description/Portal.md)<br />
+#### [Scene](planning_class_structure/classes_description/Scene.md)<br />
