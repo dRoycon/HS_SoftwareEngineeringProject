@@ -10,7 +10,7 @@ stateDiagram-v2
     GameplayScreen --> PauseScreen
     PauseScreen --> GameplayScreen
 
-    state  "SettingScreen can only rerurn to the previous screen" 
+    state  "SettingScreen can only rerurn to the previous screen" as s1
 
     PauseScreen --> StartingScreen
     PauseScreen --> SettingScreen
