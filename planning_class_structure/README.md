@@ -2,11 +2,11 @@
 
 ``` mermaid
 classDiagram
-    iDisplay <|.. StartingScreen
-    iDisplay <|.. LevelSelectingScreen
-    iDisplay <|.. SettingsScreen
-    iDisplay <|.. PauseGameplayScreen
-    iDisplay <|.. GameplayScreen
+    iDrawScreen <|.. StartingScreen
+    iDrawScreen <|.. LevelSelectingScreen
+    iDrawScreen <|.. SettingsScreen
+    iDrawScreen <|.. PauseGameplayScreen
+    iDrawScreen <|.. GameplayScreen
 
     StartingScreen *-- Scene
     LevelSelectingScreen *-- Scene
