@@ -72,5 +72,5 @@ classDiagram
 
 ```
 
-[Player](planning_class_structure/classes_description/Player.md)
-[Player](planning_class_structure/classes_description/Portal.md)
+#### [Player](planning_class_structure/classes_description/Player.md)<br />
+#### [Portal](planning_class_structure/classes_description/Portal.md)
