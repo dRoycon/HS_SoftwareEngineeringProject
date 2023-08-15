@@ -6,7 +6,6 @@ classDiagram
     GraphicalObject <|-- TextBox
     GraphicalObject <|-- Joystick
 
-    GameObject <|-- Portal
     GameObject <|-- Box
     GameObject <|-- Entity
 
@@ -14,6 +13,8 @@ classDiagram
     Entity <|-- Player
 
     Scene *-- GraphicalObject
+    GameObject <|-- Portal
+
     Scene <|-- GameScene
 
     GameScene *-- Player
