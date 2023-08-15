@@ -14,10 +14,11 @@ classDiagram
     Entity <|-- NPC
     Entity <|-- Player
 
+    Scene <|-- GameScene
+
     Scene *-- GraphicalObject
     GameObject <|-- Portal
 
-    Scene <|-- GameScene
 
     GameScene *-- Player
 
