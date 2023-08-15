@@ -1,4 +1,4 @@
-# The Classes Structure 
+# The Classes Diagrams Structure 
 
 ``` mermaid
 classDiagram
@@ -7,7 +7,6 @@ classDiagram
     Screen <|-- SettingsScreen
     Screen <|-- PauseGameplayScreen
     Screen <|-- GameplayScreen
-
 
     StartingScreen *-- Scene
     LevelSelectingScreen *-- Scene
@@ -35,4 +34,29 @@ classDiagram
     GameplayScreen *-- GameScene
     GameplayScreen *-- NPC
     GameplayScreen *-- Player
+
+    class GraphicalObject{
+        +PointF position
+        +Size size
+        +Color color
+        +Bitmap texture
+    }
+
+    class GameObject{
+        +Update(Position)
+    }
+
+    class Scene{
+        +List<GraphicalObject> graphicalObjects
+    }
+
+    class Scene{
+        +List<GameObject> gameObjects
+    }
+
+    class TextBox{
+        +String message
+    }
+
+
 ```
