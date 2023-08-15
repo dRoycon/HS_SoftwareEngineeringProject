@@ -4,7 +4,7 @@
 ``` mermaid
 flowchart LR
 
-    id["The SettingScreen can only return to its previous you can *not* do StartingScreen --> SettingScreen --> PauseScreen --> GameplayScreen]
+    id["The SettingScreen can only return to its previous you can *not* do StartingScreen --> SettingScreen --> PauseScreen --> GameplayScreen"]
 
     StartingScreen --> GameplayScreen
     StartingScreen <--> LevelSelectingScreen
