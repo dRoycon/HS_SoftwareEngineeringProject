@@ -3,12 +3,21 @@
 ``` mermaid
 classDiagram
 
-    Scene *-- StartingScreen
-    Scene *-- LevelSelectingScreen
-    Scene *-- SettingsScreen
-    Scene *-- PauseGameplayScreen
+    StartingScreen *-- Scene
+    LevelSelectingScreen *-- Scene
+    SettingsScreen *-- Scene
+    PauseGameplayScreen *-- Scene
 
-    GraphicalObject *-- Scene
-    
+    Scene *-- GraphicalObject
+    Scene <|-- GameScene 
 
+    GraphicalObject <|-- TextBox
+    GraphicalObject <|-- GameObject
+
+    GameObject <|-- Box
+    GameObject <|-- Entity
+    GameplayScreen *-- GameObject 
+
+    Entity <|-- NPC
+    Entity <|-- Player
 ```
