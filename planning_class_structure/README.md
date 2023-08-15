@@ -2,6 +2,10 @@
 
 ``` mermaid
 classDiagram
+    Screen <|-- StartingScreen
+    Screen <|-- LevelSelectingScreen
+    Screen <|-- SettingsScreen
+    Screen <|-- PauseGameplayScreen
 
     StartingScreen *-- Scene
     LevelSelectingScreen *-- Scene
