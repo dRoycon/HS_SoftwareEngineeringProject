@@ -2,9 +2,11 @@
 
 ``` mermaid
 classDiagram
+    GameScene *-- GameObject
+    GraphicalObject <|-- Joystick
+
     GraphicalObject <|-- GameObject 
     GraphicalObject <|-- TextBox
-    GraphicalObject <|-- Joystick
 
     GameObject <|-- Box
     GameObject <|-- Entity
@@ -18,7 +20,6 @@ classDiagram
     Scene <|-- GameScene
 
     GameScene *-- Player
-    GameScene *-- GameObject
 
     Controler *-- Joystick
 
