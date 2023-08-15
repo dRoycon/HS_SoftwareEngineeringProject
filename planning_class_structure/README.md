@@ -13,8 +13,8 @@ classDiagram
     Entity <|-- NPC
     Entity <|-- Player
 
-    Scene *-- GraphicalObject
     Scene <|-- GameScene
+    Scene *-- GraphicalObject
 
     GameScene *-- Player
     GameScene *-- GameObject
