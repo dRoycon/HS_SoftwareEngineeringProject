@@ -18,11 +18,15 @@ classDiagram
     GameObject <|-- Portal
     GameObject <|-- Box
     GameObject <|-- Entity
-    GameplayScreen *-- GameObject 
+    GameScene *-- GameObject 
 
-    Entity <|-- NPC
+
     Entity <|-- Player
+    Entity <|-- NPC
 
+    NPC <|-- Enemy
+
+    GameplayScreen *-- GameScene
     GameplayScreen *-- NPC
     GameplayScreen *-- Player
 ```
