@@ -2,36 +2,13 @@
 
 ``` mermaid
 classDiagram
-    GameScene *-- GameObject
-    GraphicalObject <|-- Joystick
 
-    GraphicalObject <|-- GameObject 
-    GraphicalObject <|-- TextBox
+    Scene *-- StartingScreen
+    Scene *-- LevelSelectingScreen
+    Scene *-- SettingsScreen
+    Scene *-- PauseGameplayScreen
 
-    GameObject <|-- Box
-    GameObject <|-- Entity
-
-    Entity <|-- NPC
-    Entity <|-- Player
-
-    Scene <|-- GameScene
-
-    Scene *-- GraphicalObject
-    GameObject <|-- Portal
-
-
-    GameScene *-- Player
-
-    Controler *-- Joystick
-
-    GameplayScreen *-- GameScene
-    GameplayScreen *-- Controler
-
-    StartingScreen *-- Scene
-
-    LevelSelctingScreen *-- Scene
-    SettingsScreen *-- Scene
-    PauseGameplayScreen *-- Scene
-
+    GraphicalObject *-- Scene
+    
 
 ```
