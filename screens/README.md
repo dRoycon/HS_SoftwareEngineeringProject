@@ -10,13 +10,21 @@ stateDiagram-v2
     GameplayScreen --> PauseScreen
     PauseScreen --> GameplayScreen
 
+    state  "SettingScreen can only rerurn to the previous screen" 
+
     PauseScreen --> StartingScreen
     PauseScreen --> SettingScreen
     SettingScreen --> PauseScreen
 
+    LevelSelectingScreen --> GameplayScreen
     StartingScreen --> LevelSlectingScreen
     LevelSlectingScreen --> StartingScreen
-    LevelSelectingScreen --> GameplayScreen
+    LevelSlectingScreen --> StartingScreen
+    StartingScreen --> LevelSelectingScreen
+
+    StartingScreen --> SettingScreen
+    SettingScrenn --> StartingScreen
+
 ```
 ## Starting Screen
 
