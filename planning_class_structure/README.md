@@ -2,11 +2,11 @@
 
 ``` mermaid
 classDiagram
-    Screen <|-- StartingScreen
-    Screen <|-- LevelSelectingScreen
-    Screen <|-- SettingsScreen
-    Screen <|-- PauseGameplayScreen
-    Screen <|-- GameplayScreen
+    iDisplay <|.. StartingScreen
+    iDisplay <|.. LevelSelectingScreen
+    iDisplay <|.. SettingsScreen
+    iDisplay <|.. PauseGameplayScreen
+    iDisplay <|.. GameplayScreen
 
     StartingScreen *-- Scene
     LevelSelectingScreen *-- Scene
@@ -33,7 +33,12 @@ classDiagram
 
     GameplayScreen *-- GameScene
     GameplayScreen *-- NPC
-    GameplayScreen *-- Player
+    GameplayScreen *-- GameScene
+
+    class iDrawScreen{
+        <<interface>>
+        DrawScreen()
+    }
 
     class GraphicalObject{
         +PointF position
@@ -50,8 +55,14 @@ classDiagram
         +List<GraphicalObject> graphicalObjects
     }
 
-    class Scene{
+    class GameScene{
         +List<GameObject> gameObjects
+        +Player player
+
+    }
+
+    class Player{
+        +Portal[] portals
     }
 
     class TextBox{

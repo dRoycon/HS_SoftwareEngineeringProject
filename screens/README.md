@@ -15,6 +15,9 @@ flowchart LR
     PauseScreen --> StartingScreen
 ```
 *Note: The SettingScreen can only return to its previous you can **not** do ```StartingScreen --> SettingScreen --> PauseScreen --> GameplayScreen```
+
+# Sketches
+
 ## Starting Screen
 
 
