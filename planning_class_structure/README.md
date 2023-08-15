@@ -6,6 +6,8 @@ classDiagram
     Screen <|-- LevelSelectingScreen
     Screen <|-- SettingsScreen
     Screen <|-- PauseGameplayScreen
+    Screen <|-- GameplayScreen
+
 
     StartingScreen *-- Scene
     LevelSelectingScreen *-- Scene
