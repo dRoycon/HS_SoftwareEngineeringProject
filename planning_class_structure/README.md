@@ -11,13 +11,18 @@ classDiagram
     Scene *-- GraphicalObject
     Scene <|-- GameScene 
 
+    GraphicalObject <|-- Joystick
     GraphicalObject <|-- TextBox
     GraphicalObject <|-- GameObject
 
+    GameObject <|-- Portal
     GameObject <|-- Box
     GameObject <|-- Entity
     GameplayScreen *-- GameObject 
 
     Entity <|-- NPC
     Entity <|-- Player
+
+    GameplayScreen *-- NPC
+    GameplayScreen *-- Player
 ```
