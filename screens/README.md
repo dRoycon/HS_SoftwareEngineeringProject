@@ -16,8 +16,6 @@ stateDiagram-v2
     PauseScreen --> SettingScreen
     SettingScreen --> PauseScreen
 
-    LevelSelectingScreen --> GameplayScreen
-    StartingScreen --> LevelSelectingScreen
     LevelSelectingScreen --> StartingScreen
     LevelSelectingScreen --> GameplayScreen
     StartingScreen --> LevelSelectingScreen
